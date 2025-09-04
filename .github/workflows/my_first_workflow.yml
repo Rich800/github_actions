@@ -14,3 +14,9 @@ jobs:
           python3 -V
           touch my_file_with_workflow.py
           ls -l
+    steps:
+      - name: Upload logs 
+        uses: actions/upload-artifact@v4
+        with:
+           name: custom-logs
+           path: mylog.txt
