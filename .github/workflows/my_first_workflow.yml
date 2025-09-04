@@ -8,15 +8,10 @@ jobs:
         os: [ubuntu-latest, ubuntu-20.04]
     steps:
       - name: echo a string
-        run: echo "Hello world"
+        run: echo "Hello Richard, How are you today?"
       - name: multiline script
         run: |
           python3 -V
           touch my_file_with_workflow.py
           ls -l
-    steps:
-      - name: Upload logs 
-        uses: actions/upload-artifact@v4
-        with:
-           name: custom-logs
-           path: mylog.txt
+   
